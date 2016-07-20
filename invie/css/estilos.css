@@ -2,12 +2,30 @@ body {
     margin: 0;
     font-family: 'Allerta', sans-serif;
 }
+
+.background {
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+.contenedor {
+    width: 800px;
+    margin: auto;
+}
+
 .button {
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #fd324e; 
     color: white;
-    padding: 7px;
-    border: 0;
+    padding: 7px 12px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(to left, #fe344e, #ff7250);
+    text-decoration: none;
+}
+
+.button:hover {
+    
 }
 
 .titulo {
@@ -15,6 +33,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0;
     margin-top: 70px;
+}
+
+.titulo span {
+    text-decoration: underline;
 }
 
 .title-a {
@@ -29,6 +51,7 @@ body {
 
 .guitarras {
     color: #1F313C;
+    margin-bottom: 50px;
 }
 
 .guitarras h2 {
@@ -37,9 +60,9 @@ body {
 }
 
 .portada {
-    background-image: url("../images/background.png");
     color: white;
     padding: 20px;
+    height: 500px;
 }
 
 .portada button {
@@ -57,13 +80,13 @@ body {
     margin-left: 30px;
 }
 
-.logotipo {
-    display: inline-block;
+.menu a {
+    color: white;
+    text-decoration: none;
 }
 
-.contenedor {
-    width: 800px;
-    margin: auto;
+.logotipo {
+    display: inline-block;
 }
 
 .guitarra {
@@ -71,6 +94,10 @@ body {
     padding: 10px;
     border: 1px solid #1F313C;
     border-radius: 8px;
+}
+
+.guitarra.b {
+    height: 190px;
 }
 
 .right {
@@ -82,7 +109,6 @@ body {
 .left {
     float: left;
     position: relative;
-    top: 80px;
 }
 
 .guitarra-a {
@@ -91,6 +117,8 @@ body {
 
 .guitarra-b {
     margin-left: 370px;
+    position: relative;
+    bottom: 90px;
 }
 
 .footer {
@@ -146,4 +174,28 @@ body {
 
 .col2 {
     align-items: flex-start;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+th {
+    background-color: #273b47;
+    color: white;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 20px;
+}
+
+th, td, table {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
 }
